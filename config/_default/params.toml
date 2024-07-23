@@ -1,0 +1,120 @@
+colorScheme = "avocado"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+disableImageZoom = false
+disableImageOptimization = true
+disableTextInHeader = false
+
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = true
+
+[header]
+  layout = "fixed-gradient"
+
+[homepage]
+  layout = "profile"
+  #homepageImage = "imgs/hero.jpg"
+  showRecent = false
+  showRecentItems = 3
+  showMoreLink = false
+  showMoreLinkDest = "/"
+  cardView = true
+  cardViewScreenWidth = true
+  layoutBackgroundBlur = false
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[article]
+  showDate = true
+  showViews = true
+  showLikes = true
+  showComments = false
+  showDateOnlyInArticle = false
+  showDateUpdated = true
+  showAuthor = false
+  showAuthorBottom = false
+  showHero = false
+  heroStyle = "big"
+  layoutBackgroundBlur = false
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = true
+  showDraftLabel = true
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = false
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = false
+  relatedContentLimit = 3
+  showTaxonomies = true
+  showAuthorsBadges = false
+  showWordCount = true
+  sharingLinks = [ "bluesky", "linkedin", "reddit", "twitter", "whatsapp", "telegram", "pinterest", "facebook", "email" ]
+  showZenMode = true
+
+[list]
+  showHero = false
+  heroStyle = "big"
+  layoutBackgroundBlur = false
+  layoutBackgroundHeaderSpace = false
+  showBreadcrumbs = true
+  showSummary = true
+  showViews = false
+  showLikes = false
+  showComments = false
+  showTableOfContents = false
+  showCards = false
+  groupByYear = true
+  cardView = false
+  cardViewScreenWidth = false
+  constrainItemsWidth = false
+
+[taxonomy]
+  showTermCount = true
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  cardView = false
+
+[term]
+  showHero = true
+  heroStyle = "big"
+  showBreadcrumbs = false
+  showViews = false
+  showLikes = false
+  showTableOfContents = false
+  groupByYear = false
+  cardView = true
+  cardViewScreenWidth = true
+
+[sitemap]
+  excludedKinds = []
+
+[fonts]
+  google = "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+
+[verification]
+  google = "xuMdCxKom7IZ2YwCTzVJli3Sp_bvt-nofj8Q1iBjPf0"
+
+[firebase]
+  #apiKey = "AIzaSyANIOacAJ_6BpQnoO3wvPebCP0__KRjK_U"
+  #authDomain = "yourziro.firebaseapp.com"
+  #projectId = "yourziro"
+  #storageBucket = "yourziro.appspot.com"
+  #messagingSenderId = "258486544932"
+  #appId = "1:258486544932:web:162a1f4a4ee2114d07c6b1"
+  #measurementId = "G-8GNGZQ1604"

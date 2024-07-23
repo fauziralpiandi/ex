@@ -1,0 +1,75 @@
+global:
+  language: "ID"
+
+article:
+  anchor_label: "Anchor"
+  date: "{{ .Date }}"
+  date_updated: "Diperbarui: {{ .Date }}"
+  draft: "Draft"
+  edit_title: "Edit"
+  reading_time:
+    one: "{{ .Count }} menit"
+    other: "{{ .Count }} menit"
+  reading_time_title: "Waktu baca"
+  table_of_contents: "Daftar isi"
+  word_count:
+    one: "{{ .Count }} kata"
+    other: "{{ .Count }} kata"
+  views:
+    one: "{{ .Count }} lihat"
+    other: "{{ .Count }} lihat"
+  likes:
+    one: "{{ .Count }} suka"
+    other: "{{ .Count }} suka"
+  part_of_series: "Postingan ini merupakan bagian dari sebuah Seri."
+  part: "Bagian"
+  this_article: "Postingan ini"
+  related_articles: "Terkait"
+  zen_mode_title:
+    enable: ""
+    disable: ""
+
+author:
+  byline_title: "Penulis"
+
+code:
+  copy: "Salin"
+  copied: "Disalin"
+
+error:
+  404_title: "404"
+  404_error: "Halaman tidak ditemukan"
+  404_description: "Sepertinya Kamu tersesat dalam kegelapan,<br />Kembali ke <a href=\"{{ .Site.BaseURL }}\" class=\"btn btn-primary\">halaman utama</a> dan temukan cahaya yang Kamu cari!<br /><a href=mailto:fwzyrln@gmail.com\ class=\"btn btn-primary\">Hubungi Saya</a> jika ada kekeliruan dan untuk bantuan lebih lanjut."
+
+footer:
+  dark_appearance: ""
+  light_appearance: ""
+  powered_by: "All Rights Reserved | Powered by Coffee & Moon"
+
+list:
+  externalurl_title: "Tautan ke situs eksternal"
+  no_articles: "Belum ada postingan."
+
+nav:
+  scroll_to_top_title: "Gulir ke atas"
+  skip_to_main: "Lewati ke konten utama"
+
+search:
+  open_button_title: "Cari (/)"
+  close_button_title: "Tutup (Esc)"
+  input_placeholder: "Kata kunci..."
+
+sharing:
+  email: "Kirim lewat Surel"
+  facebook: "Bagikan ke Facebook"
+  linkedin: "Bagikan ke LinkedIn"
+  pinterest: "Pin di Pinterest"
+  reddit: "Reddit"
+  twitter: "Tweet di Twitter"
+  bluesky: "Posting di Bluesky"
+
+shortcode:
+  recent_articles: "Terbaru"
+
+recent:
+  show_more: "Lainnya"

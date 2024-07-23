@@ -1,0 +1,17 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{{ $mainPage := .Site.Home }}
+  <url>
+    <loc>{{ $mainPage.Permalink }}</loc>
+    {{ with $mainPage.Lastmod }}
+      <lastmod>{{ safeHTML ( .Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>
+    {{ end }}
+    {{ with $mainPage.Sitemap.ChangeFreq }}
+      <changefreq>{{ . }}</changefreq>
+    {{ end }}
+    {{ with $mainPage.Sitemap.Priority }}
+      <priority>{{ . }}</priority>
+    {{ end }}
+  </url>
+</urlset>

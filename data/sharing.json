@@ -1,0 +1,47 @@
+{
+  "email": {
+    "icon": "at",
+    "title": "sharing.email",
+    "url": "mailto:?body=%s&subject=%s"
+  },
+  "facebook": {
+    "icon": "brand-facebook",
+    "title": "sharing.facebook",
+    "url": "https://www.facebook.com/sharer/sharer.php?u=%s&quote=%s"
+  },
+  "linkedin": {
+    "icon": "brand-linkedin",
+    "title": "sharing.linkedin",
+    "url": "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s"
+  },
+  "pinterest": {
+    "icon": "brand-pinterest",
+    "title": "sharing.pinterest",
+    "url": "https://pinterest.com/pin/create/bookmarklet/?url=%s&description=%s"
+  },
+  "reddit": {
+    "icon": "brand-reddit",
+    "title": "sharing.reddit",
+    "url": "https://reddit.com/submit/?url=%s&resubmit=true&title=%s"
+  },
+  "twitter": {
+    "icon": "brand-x",
+    "title": "sharing.twitter",
+    "url": "https://twitter.com/intent/tweet/?url=%s&text=%s"
+  },
+  "whatsapp": {
+    "icon": "brand-whatsapp",
+    "title": "sharing.whatsapp",
+    "url": "https://api.whatsapp.com/send?text=%s&resubmit=true&title=%s"
+  },
+  "telegram": {
+    "icon": "brand-telegram",
+    "title": "sharing.telegram",
+    "url": "https://t.me/share/url?url=%s&resubmit=true&title=%s"
+  },
+  "bluesky": {
+    "icon": "brand-bluesky",
+    "title": "sharing.bluesky",
+    "url": "https://bsky.app/intent/compose?text=%[2]s+%[1]s"
+  }
+}

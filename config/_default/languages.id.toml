@@ -1,0 +1,22 @@
+languageCode = "id"
+languageName = "Indonesia"
+weight = 1
+
+title = "Author’s Homepage"
+
+[params]
+  displayName = "Indonesia"
+  isoCode = "id"
+  rtl = false
+  dateFormat = "Monday, 2 January 2006"
+  logo = "imgs/logo.png"
+  description = ""
+  copyright = "Copyright &copy; 2024 Fauzira Alpiandi"
+
+[author]
+  name = "Fauzira Alpiandi"
+  image = "imgs/fauziralpiandi.jpg"
+  headline = "Author, Developer"
+  links = [
+  { brand-instagram = "https://instagram.com/fauziralpiandi" }
+  ]
