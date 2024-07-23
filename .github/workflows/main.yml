@@ -1,7 +1,7 @@
 name: Hosted Runner
 
 on:
-  
+
   workflow_dispatch:
 
 permissions:
@@ -23,22 +23,22 @@ jobs:
     env:
       HUGO_VERSION: 0.128.0
     steps:
-      - name: install hugo
+      - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: install dart saas
+      - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: setup pages
+      - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: install dependencies
+      - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: build
+      - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
@@ -46,7 +46,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: upload artifacts
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
@@ -56,8 +56,8 @@ jobs:
       name: Let’s Go!
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build w/ hugo
+    needs: build
     steps:
-      - name: deploy
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
