@@ -1,4 +1,7 @@
 User-agent: *
+{{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 Allow: /
-
-Sitemap: https://zira.my.id/sitemap.xml
+{{- else }}
+Disallow: /
+{{- end }}
+Sitemap: {{ "sitemap.xml" | absURL }}
