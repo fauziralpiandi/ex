@@ -4,10 +4,6 @@ defaultContentLanguage = "id"
 paginate = 10
 enableEmoji = true
 
-[sitemap]
-  changeFreq = "weekly"
-  priority = 1.0
-
 [imaging]
   anchor = 'Center'
 
